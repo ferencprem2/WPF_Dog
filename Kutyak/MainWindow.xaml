@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="thirdQuestionLabel" Grid.Row="0"/>
+        <Label x:Name="sixthQuestionLabel" Grid.Row="1"/>
+        <Label x:Name="seventhQuestionLabel" Grid.Row="2"/>
+        <Label x:Name="eightQuestionLabel" Grid.Row="3" Height="30" Margin="0,1,0,162" RenderTransformOrigin="0.5,0.545"/>
+        <ListBox x:Name="eightQuestionBox" Grid.Row="3" Height="120" Width="700"/>
+        <Label x:Name="ninethQuestionLabel" Grid.Row="4"/>
+        <Label x:Name="tenthQuestionLabel" Grid.Row="5"/>
+
 
     </Grid>
 </Window>

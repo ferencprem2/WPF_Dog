@@ -12,10 +12,10 @@ namespace Kutyak
         private int id;
         private int specId;
         private int nameId;
-        private int lifespan;
-        private int lastDocVisit;
+        private double lifespan;
+        private DateTime lastDocVisit;
 
-        public Kutya(int id, int specId, int nameId, int lifespan, int lastDocVisit)
+        public Kutya(int id, int specId, int nameId, double lifespan, DateTime lastDocVisit)
         {
             this.id = id;
             this.specId = specId;
@@ -27,7 +27,7 @@ namespace Kutyak
         public int Id { get => id; }
         public int SpecId { get => specId; }
         public int NameId { get => nameId; }
-        public int Lifespan { get => lifespan; }
-        public int LastDocVisit { get => lastDocVisit; }
+        public double Lifespan { get => lifespan; }
+        public DateTime LastDocVisit { get => lastDocVisit; }
     }
 }
